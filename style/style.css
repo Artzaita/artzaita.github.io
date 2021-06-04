@@ -47,8 +47,16 @@ img {
     max-width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 .pop, footer {
     background-color: #F2F2F2;
+}
+
+.stared {
+    color: #0065FC;
 }
 
 header nav {
@@ -139,4 +147,131 @@ header nav p.selected a {
 .selector button .fa-search {
     font-size: 4em;
     color: #fff;
+}
+
+#filter {
+    padding: 1em;
+}
+
+#filter div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#filter div i {
+    display: flex;
+    align-items: center;
+    padding-right: 0.5em;
+    margin: 1em 0.5em 1em 0;
+    border: 2px solid #F2F2F2;
+    border-radius: 1.75em;
+}
+
+#filter div i:before {
+    padding: .75em;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+#filter div i p {
+    padding-left: .5em;
+    margin: 0;
+}
+
+#filter > i {
+    display: flex;
+    align-items: baseline;
+}
+
+#filter > i:before {
+    color: #0065FC;
+    padding: 0.5em 0.75em;
+    border-radius: 50%;
+    border: 2px solid #F2F2F2;
+}
+
+#filter > i p {
+    font-weight: normal;
+    padding-left: .5em;
+}
+
+.pop,
+.hebergement,
+#activite {
+    padding: 1em;
+}
+
+.pop #title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.pop .list article {
+    background-color: #ffffff;
+    border-radius: 1em;
+    padding: .5em;
+    margin-bottom: 1em;
+    display: flex;
+}
+
+.pop .list article img {
+    width: 33vw;
+    height: 33vw;
+    /*padding: .5em;*/
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    object-fit: cover;
+}
+
+.pop .list article > div {
+    width: 47vw;
+    height: 33vw;
+    padding: 0 .5em;
+}
+
+.pop .list article div h4 {
+    margin: 0;
+}
+
+.pop .list article div p {
+    font-size: .75em;
+}
+
+.hebergement {
+    font-size: .5em;
+}
+
+/*.hebergement*/ article {
+    border-radius: 1em;
+    padding: .5em;
+    margin: 1em 0;
+    box-shadow: 0px 0px 15px 10px #F2F2F2;
+}
+
+/*.hebergement*/ article img {
+    width: 100%;
+    height: 33vw;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.hebergement article h4,
+.hebergement article p {
+    margin: 0;
+}
+
+.hebergement p a {
+    font-weight: bold;
+}
+
+footer {
+    padding-top: 1em;
+}
+
+footer nav div p {
+    font-weight: bold;
+    padding-left: 40px;
 }
